@@ -1,0 +1,83 @@
+<idea-plugin>
+    <id>github.clyoudu.caseformat</id>
+    <name>CaseFormat</name>
+    <version>1.0</version>
+    <vendor email="vabshroo@gmail.com" url="http://www.github.com/clyoudu">clyoudu</vendor>
+
+    <description><![CDATA[
+      <ul>
+        <li>ALT + H: Converting selected text to lower hyphen case.</li>
+        <li>ALT + SHIFT + H: Converting selected text to upper hyphen case.</li>
+        <li>ALT + C: Converting selected text to lower camel case.</li>
+        <li>ALT + SHIFT + C: Converting selected text to upper camel case.</li>
+        <li>ALT + U: Converting selected text to lower underscore case.</li>
+        <li>ALT + SHIFT + U: Converting selected text to upper underscore case.</li>
+      </ul>
+    ]]></description>
+
+    <change-notes><![CDATA[
+      <ul>
+        <li>1.0<br/>plugin init.</li>
+      </ul>
+    ]]>
+    </change-notes>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+    <idea-version since-build="145.0"/>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <actions>
+        <action id          = "CaseFormat.LowerHyphenAction"
+                class       = "github.clyoudu.caseformat.action.LowerHyphenAction"
+                text        = "Lower Hyphen Word"
+                description = "Lower Hyphen word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt H" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+        <action id          = "CaseFormat.UpperHyphenAction"
+                class       = "github.clyoudu.caseformat.action.UpperHyphenAction"
+                text        = "Upper Hyphen Word"
+                description = "Upper Hyphen word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt shift H" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+        <action id          = "CaseFormat.LowerCamelAction"
+                class       = "github.clyoudu.caseformat.action.LowerCamelAction"
+                text        = "Lower Camel Word"
+                description = "Lower Camel word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt M" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+        <action id          = "CaseFormat.UpperCamelAction"
+                class       = "github.clyoudu.caseformat.action.UpperCamelAction"
+                text        = "Upper Camel Word"
+                description = "Upper Camel word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt shift M" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+        <action id          = "CaseFormat.LowerUnderscoreAction"
+                class       = "github.clyoudu.caseformat.action.LowerUnderscoreAction"
+                text        = "Lower Underscore Word"
+                description = "Lower Underscore word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt U" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+        <action id          = "CaseFormat.UpperUnderscoreAction"
+                class       = "github.clyoudu.caseformat.action.UpperUnderscoreAction"
+                text        = "Lower Underscore Word"
+                description = "Lower Underscore word at cursor, starting at caret">
+            <keyboard-shortcut first-keystroke="alt shift U" keymap="$default"/>
+            <add-to-group anchor="last" group-id="EditorActions"/>
+        </action>
+    </actions>
+
+</idea-plugin>
