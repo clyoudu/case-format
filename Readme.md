@@ -7,7 +7,7 @@ Converting selected text(or one word after pointer) between various ASCII case f
 - `IDEAIntelliJ IDEA 2017.2.7`
 
 ## Plugin Jar
-[case-format.jar](caseformat.jar)
+[case-format.jar](case-format.jar)
 
 ## Keyboard Shortcut
 - `ALT + H`: Converting selected text to lower hyphen case.
@@ -19,19 +19,25 @@ Converting selected text(or one word after pointer) between various ASCII case f
 
 ## Example
 lower hyphen
+
 ![](screenshot/alt_h.gif)
 
 upper hyphen
+
 ![](screenshot/alt_shift_h.gif)
 
 lower camel
+
 ![](screenshot/alt_m.gif)
 
 upper camel
+
 ![](screenshot/alt_shift_m.gif)
 
 lower underscore
+
 ![](screenshot/alt_u.gif)
 
 upper underscore
+
 ![](screenshot/alt_shift_u.gif)
