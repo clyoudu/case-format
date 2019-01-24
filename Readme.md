@@ -12,8 +12,8 @@ Converting selected text(or one word after pointer) between various ASCII case f
 ## Keyboard Shortcut
 - `ALT + H`: Converting selected text to lower hyphen case.
 - `ALT + SHIFT + H`: Converting selected text to upper hyphen case.
-- `ALT + C`: Converting selected text to lower camel case.
-- `ALT + SHIFT + C`: Converting selected text to upper camel case.
+- `ALT + M`: Converting selected text to lower camel case.
+- `ALT + SHIFT + M`: Converting selected text to upper camel case.
 - `ALT + U`: Converting selected text to lower underscore case.
 - `ALT + SHIFT + U`: Converting selected text to upper underscore case.
 

@@ -8,8 +8,8 @@
       <ul>
         <li>ALT + H: Converting selected text to lower hyphen case.</li>
         <li>ALT + SHIFT + H: Converting selected text to upper hyphen case.</li>
-        <li>ALT + C: Converting selected text to lower camel case.</li>
-        <li>ALT + SHIFT + C: Converting selected text to upper camel case.</li>
+        <li>ALT + M: Converting selected text to lower camel case.</li>
+        <li>ALT + SHIFT + M: Converting selected text to upper camel case.</li>
         <li>ALT + U: Converting selected text to lower underscore case.</li>
         <li>ALT + SHIFT + U: Converting selected text to upper underscore case.</li>
       </ul>
